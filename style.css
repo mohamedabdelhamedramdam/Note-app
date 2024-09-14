@@ -71,7 +71,7 @@ header {
   background-repeat: no-repeat;
   top: 14%;
   right: -15px;
-  background-image: url(imgs/Button\ 2.svg);
+  background-image: url("Button\ 2.svg");
   background-position: center;
   background-size: 28px;
   display: block;
@@ -201,7 +201,7 @@ main {
   background-repeat: no-repeat;
   top: 14%;
   right: -15px;
-  background-image: url("imgs/Button01.svg");
+  background-image: url("Button01.svg");
   background-position: center;
   background-size: 28px;
   display: block;
