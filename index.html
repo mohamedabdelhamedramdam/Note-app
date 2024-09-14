@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteAPP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+
+            <div class="menu"><img src="imgs/Menu_1.png" alt="menu icon" class="menu-icon"></div>
+            <h1 class="title">Almadrasa-Notes</h1>
+            <div class="search-box">
+                <button class="search-icon"><img src="imgs/Frame.png" alt="search-icon"></button>
+                <input type="text" placeholder="Search" class="input hidden">
+            </div>
+            <div class="close-search hide"><img src="imgs/Vector.svg" alt="close-icon" class="close-icon"></div>
+        </div>
+        <nav class="hideNav">
+            <div class="close-img hide"><img src="imgs/Vector.svg" alt="close-icon" class="close-icon"></div>
+            <ul class="nav-list">
+                <li class="nav-ele">
+                    <span class="line"></span>
+                    <button class="nav-btn nav-notes">Notes</button>
+                </li>
+                <li class="nav-ele">
+                    <span class="line visibility"></span>
+                    <button class="nav-btn nav-addNotes">Add Notes</button>
+                </li>
+            </ul>
+        </nav>
+        <button class="btn-header hide"></button>
+    </header>
+    <main>
+        <div class="notes-cont ">
+            <div class="pinned-list">
+                <p class="category-title pinned-title">PINNED</p>
+                <p class="no-notes">No pinned notes yet</p>
+                <!-- <ul class="pinned">
+                    <li class="note-ele">
+                        <h2 class="note-title">Light & Bright in Brooklyn</h2>
+                        <p class="note-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu
+                            dui.
+                        </p>
+                        <div class="note-footer">
+                            <p class="date">Aug 26,2024</p>
+                            <button class="delete-btn">Delete</button>
+                        </div>
+                    </li>
+                </ul> -->
+            </div>
+            <div class="notes-reg">
+                <p class="category-title notes-title">Notes</p>
+                <p class="no-notes">No notes yet</p>
+                <!-- <ul class="notes">
+                    <li class="note-ele">
+                        <h2 class="note-title">Business Partners Work at Modern Office</h2>
+                        <p class="note-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui.
+                        </p>
+                        <div class="note-footer">
+                            <p class="date">Aug 26,2024</p>
+                            <button class="delete-btn">Delete</button>
+                        </div>
+                    </li>
+                </ul> -->
+            </div>
+            <button class="btn-notes"></button>
+        </div>
+        <div class="note-detail">
+            <div class="note-detail-cont">
+                <h2 class="note-detail-title"></h2>
+                <p class="note-detail-date date"></p>
+                <p class="note-detail-content"></p>
+            </div>
+            <div class="btn-cont">
+                <button class="add-note-btn">
+                    <img src="imgs/Vector (1).png" alt="plus sign" class="plus-img">
+                </button>
+            </div>
+        </div>
+        <div class="add-note-cont hide">
+            <h3 class="add-note-title">Add Note</h3>
+            <div class="input-box">
+                <label for="title" class="label">Title*</label>
+                <input type="text" id="title" class="add-note-input" />
+                <p class="warning hide">You have to fill this</p>
+            </div>
+            <div class="input-box">
+                <label for="author" class="label">Author*</label>
+                <input type="text" id="author" class="add-note-input" />
+                <p class="warning hide">You have to fill this</p>
+            </div>
+            <div class="input-box">
+                <label for="Your-Note" class="label">Your Note*</label>
+                <textarea id="Your-Note" class="note-input"></textarea>
+                <p class="warning hide">You have to fill this</p>
+
+            </div>
+            <div class="add-btn-cont">
+                <button class="add-btn  add-btn-normal">Add Note</button>
+                <button class="add-btn add-btn-pin">Add pinned Note</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
